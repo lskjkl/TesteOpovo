@@ -1,13 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 
 const Navbar = props => {
   return (
 
-    <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-md navbar-dark nav-color">
 
       <div className="navbar-header">
-        <Link className="navbar-brand" to="/">TesteOpovo</Link>
+        <a className="navbar-brand" to="/"><img className="img-logo" src="../images/logo-opovo.png"></img></a>
       </div>
 
       <button className="navbar-toggler" type="button" data-toggle="collapse"
@@ -18,8 +18,6 @@ const Navbar = props => {
 
       <section className="collapse navbar-collapse" id="navbarMainToggler">
         <div className="navbar-nav ml-auto">
-          <Link className="nav-item nav-link" to="/">Inicio</Link>
-          <Link className="nav-item nav-link" to="/sobre">Sobre</Link>
         </div>
       </section>
 
